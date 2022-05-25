@@ -1,0 +1,331 @@
+.background {
+  height: 70vh;
+  background: url(../assets/Banner.png);
+  background-size: cover;
+}
+
+.intro {
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.title-home {
+  color: #ee4622;
+}
+
+.dis {
+  font-size: 24px;
+  line-height: 29px;
+  font-weight: lighter !important;
+}
+
+.titleCard {
+  display: flex;
+  margin-left: -15px;
+  margin-top: -7px !important;
+}
+
+.artis {
+  font-size: 14px;
+}
+
+.year {
+  font-size: 11px;
+  display: flex;
+  margin-left: 94%;
+  margin-top: 2px;
+}
+
+.dengarkan {
+  text-align: center;
+  padding-top: 30px;
+  color: #ee4622;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 29px;
+}
+
+.cardSong {
+  background-color: #161616;
+}
+
+.cardThumb {
+  border: 7px solid #3a3a3a !important;
+  background-color: #3a3a3a !important;
+  /* cursor: pointer; */
+}
+
+.cardThumb:hover {
+  box-shadow: 1px 1px 2px 2px rgb(51, 51, 51);
+  box-shadow: -1px -1px -1px 3px rgb(51, 51, 51);
+}
+
+.cardBody {
+  background-color: #3a3a3a !important;
+  color: white;
+}
+
+.ant-popover-inner {
+  background-color: rgb(39, 39, 39) !important;
+  padding-top: 5px !important;
+}
+
+.ant-popover {
+  position: fixed;
+}
+
+.imageThumb {
+  border-top-left-radius: 0px !important;
+  border-top-right-radius: 0px !important;
+  height: 100% !important;
+  width: 100% !important;
+  object-fit: cover;
+  cursor: pointer;
+}
+
+.boCardImage {
+  width: 157px !important;
+  height: 150px !important;
+  background-color: rebeccapurple;
+  overflow: hidden !important;
+}
+
+.textThumb {
+  margin-top: -15px;
+  font-size: 15px;
+  margin-left: -15px;
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #232323;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #666;
+  border-radius: 5px;
+}
+
+.boxProfile {
+  width: 39px;
+  height: 39px;
+  background-color: white;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.imageProfile {
+  width: 35px !important;
+  height: 35px !important;
+  border-radius: 50% !important;
+  margin-left: 2px;
+  margin-top: 2px;
+}
+
+.rhap_container {
+  background-color: #232323 !important;
+  margin-bottom: -10px !important;
+  height: 85px !important;
+  border: 5px solid #232323;
+  line-height: 10;
+  box-shadow: none !important;
+}
+
+.rhap_progress-filled,
+.rhap_progress-indicator,
+.rhap_volume-indicator {
+  background-color: tomato !important;
+}
+
+.imagmusci {
+  margin-bottom: -9px !important;
+}
+
+.rhap_time {
+  color: white !important;
+}
+
+.linkProfile {
+  text-decoration: none !important;
+}
+
+.iconLogout {
+  color: #ee4622;
+}
+
+.bg.scrolled {
+  background-color: #232323 !important;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.avatarProfile {
+  border-radius: 20px !important;
+  cursor: pointer;
+}
+
+.rhap_main-controls {
+  height: 10px !important;
+}
+
+.rhap_button-clear {
+  height: 40px !important;
+}
+
+.rhap_repeat-button {
+  font-size: 26px;
+  width: 30px !important;
+  height: 40px !important;
+  color: #da1c1c !important;
+  margin-right: 10px;
+}
+
+.rhap_main-controls svg {
+  height: 40px !important;
+  width: 25px !important;
+  color: white !important;
+}
+
+.rhap_repeat-button svg {
+  height: 26px !important;
+  width: 18px !important;
+}
+
+.rhap_volume-button svg {
+  height: 20px !important;
+  width: 20px !important;
+  color: white !important;
+}
+
+.rhap_volume-bar-area,
+.rhap_volume-bar {
+  height: 2px !important;
+}
+
+.rhap_volume-indicator {
+  height: 10px !important;
+  width: 10px !important;
+}
+
+.rhap_time {
+  font-size: 10px !important;
+}
+
+.rhap_progress-bar {
+  height: 3px !important;
+}
+
+.rhap_progress-indicator {
+  height: 15px !important;
+  width: 12px !important;
+  margin-top: 3px !important;
+}
+
+.rhap_progress-section {
+  margin-top: -20px !important;
+}
+
+.rhap_container {
+  height: 70px !important;
+}
+
+.rhap_controls-section {
+  margin-top: -8px !important;
+}
+
+.boxMusicThumb {
+  width: 250px !important;
+  height: 70px;
+  background-color: #232323 !important;
+  margin-top: -10px;
+  margin-bottom: -20px;
+  border: 5px solid #232323;
+  display: flex;
+}
+
+.judulMusic {
+  margin-left: 65px;
+  font-size: 13px;
+  margin-top: -15px;
+  position: absolute;
+}
+
+.navPlay {
+  padding-left: 50px !important;
+  padding-right: 50px !important;
+  background-color: #232323 !important;
+  height: 70px !important;
+}
+
+.rhap_horizontal {
+  margin-top: 7px !important;
+}
+
+.boxthumb {
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+}
+
+.boxTitle {
+  width: 90% !important;
+  height: 18px;
+  position: absolute;
+  overflow-y: hidden;
+}
+
+option {
+  background-color: #181818 !important;
+}
+
+option.decorated option:hover {
+  box-shadow: 0 0 10px 100px rgba(210, 210, 210, 0.25) inset !important;
+}
+
+.imagmusci {
+  object-fit: cover;
+  width: 45px;
+  height: 45px;
+  margin-top: -10px;
+  border-radius: 50px;
+}
+
+@media (max-width: 573px) {
+  .boxthumb {
+    width: 10%;
+    height: 20px !important;
+    overflow: hidden;
+  }
+
+  .cardBody {
+    background-color: #3a3a3a !important;
+    color: white;
+  }
+
+  .cardThumb {
+    width: 80%;
+    margin-left: 10%;
+  }
+}
+
+@media (max-width: 953px) {
+  .rhap_progress-section {
+    margin-top: -30px !important;
+  }
+
+  .rhap_controls-section {
+    margin-top: -5px !important;
+  }
+
+  .judulMusic {
+    margin-left: 65px;
+    font-size: 13px;
+    margin-top: -30px;
+    position: absolute;
+  }
+}

@@ -1,0 +1,206 @@
+.body {
+  background-color: black;
+  height: 200vh !important;
+}
+
+/* Form */
+.form-attach {
+  display: flex;
+  justify-content: space-between;
+  border: 3px solid !important;
+  background-color: rgb(198, 73, 73) !important;
+  border-radius: 5px !important;
+  width: 12rem;
+}
+
+.form input,
+.form select {
+  width: 100%;
+  padding: 8px;
+  background-color: rgb(51, 47, 47) !important;
+  color: white !important;
+  border: 1px solid var(--form-border-gray) !important;
+  border-radius: 5px;
+}
+
+/* Dropdown */
+
+.list-dropdown * {
+  text-decoration: none !important;
+  color: white !important;
+}
+
+.text-nolink * {
+  text-decoration: none !important;
+  color: white !important;
+}
+
+/* Button */
+.btn-style {
+  appearance: none;
+  backface-visibility: hidden;
+  background-color: var(--red) !important;
+  border-radius: 5px;
+  border-style: none;
+  box-shadow: rgba(174, 43, 39, 0.15) 0 4px 9px !important;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  padding: 8px;
+  text-decoration: none;
+  transform: translate3d(0, 0, 0);
+  transition: all 0.3s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: top;
+  white-space: nowrap;
+  font-weight: bold;
+}
+
+.btn-style:hover {
+  background-color: #52e61d !important;
+  opacity: 1;
+  transform: translateY(0);
+  transition-duration: 0.35s;
+}
+
+.btn-style:active {
+  transform: translateY(2px);
+  transition-duration: 0.35s;
+}
+
+.btn-style:hover {
+  box-shadow: rgba(174, 39, 39, 0.271) 0 6px 12px !important;
+}
+
+.btn-style-register {
+  background-color: rgb(22, 78, 183) !important;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  width: 8rem;
+  height: 40px;
+  font-weight: bold;
+}
+
+/* Complains */
+.img-contact {
+  width: 50px !important;
+  height: 50px !important;
+  object-fit: cover !important;
+}
+
+.img-chat {
+  width: 40px !important;
+  height: 40px !important;
+  object-fit: cover !important;
+}
+
+.text-contact {
+  font-size: 14px;
+}
+
+.text-contact-chat {
+  color: #ababab;
+}
+
+.contact {
+  display: flex;
+  align-items: center;
+}
+.contact img {
+  flex-grow: 0;
+  flex-shrink: 0;
+}
+
+.contact ul {
+  list-style-type: none;
+}
+
+.contact:hover {
+  background-color: #212121;
+  transition: 0.5s;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.contact:active {
+  background-color: #3d3d3d;
+  transition: 0.3s;
+}
+
+.contact-active {
+  background-color: #212121;
+  border-radius: 5px;
+}
+
+.input-message {
+  width: 100%;
+  height: 90%;
+  background: rgba(171, 171, 171, 0.15);
+  border: none;
+  color: #ffffff;
+}
+
+.chat-me {
+  position: relative;
+  background: #262626;
+  border-radius: 5px;
+  padding: 10px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 22px;
+  max-width: 400px;
+}
+
+.chat-me::before {
+  content: "";
+  position: absolute;
+  top: 8px;
+  right: -15px;
+  border-top: 15px solid transparent;
+  border-left: 20px solid #262626;
+  border-bottom: 15px solid transparent;
+}
+.chat-other {
+  position: relative;
+  background: #575757;
+  border-radius: 5px;
+  margin-left: 10px;
+  padding: 10px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 22px;
+  max-width: 400px;
+}
+
+.chat-other::before {
+  content: "";
+  position: absolute;
+  top: 8px;
+  left: -15px;
+  border-top: 15px solid transparent;
+  border-right: 20px solid #575757;
+  border-bottom: 15px solid transparent;
+}
+
+.img-music {
+  width: 50px;
+  height: 50px;
+}
+
+.status-transaction-success {
+  color: var(--green) !important ;
+  text-transform: capitalize;
+}
+
+.status-transaction-pending {
+  color: #b6910c !important ;
+  text-transform: capitalize;
+}
+
+.status-transaction-failed {
+  color: var(--red) !important ;
+  text-transform: capitalize;
+}
