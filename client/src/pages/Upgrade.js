@@ -97,37 +97,18 @@ const Pricing = () => {
           <>
             <Row>
               <Col md={12} className="text-center">
-                <h2 className="fw-bold mb-4">Subscribe</h2>
-                <p>
-                  Berlangganan Sekarang dan nikmati streaming music yang kekinian dari <span className="text-var-red fw-bold">DUMB</span>
+                <h2 className="fw-bold mb-4 text-white">Subscribe</h2>
+                <p className="text-white">
+                  Berlangganan Sekarang dan nikmati streaming music yang kekinian dari{" "}
+                  <span className="text-danger fw-bold">
+                    <br></br>DUMB
+                  </span>
                   <span className="fw-bold">SOUND</span>
                 </p>
               </Col>
               <Col md={12} className="d-flex justify-content-center gap-3">
                 <Card className="card-price bg-var-dark-gray text-center">
-                  <Card.Header as="h5">Paket Small</Card.Header>
-                  <Card.Body>
-                    <Card.Title>
-                      <span className="fs-3 text-var-red">Rp.7.500</span>
-                      <span className="">/7 Hari</span>
-                    </Card.Title>
-                    <Card.Text>
-                      <ul class="list-unstyled mt-3 mb-4">
-                        <li>Music Kualitas Terbaik</li>
-                        <li>Bebas Akses Music Selama 7 Hari</li>
-                        <li>Help center access</li>
-                        <li>-</li>
-                      </ul>
-                    </Card.Text>
-                    <button className="btn-red px-5" onClick={() => handleBuy("7500")}>
-                      {" "}
-                      Buy
-                    </button>
-                  </Card.Body>
-                </Card>
-
-                <Card className="card-price bg-var-dark-gray text-center">
-                  <Card.Header as="h5">Paket Reguler</Card.Header>
+                  <Card.Header as="h5">Get your 30 Days of Streaming</Card.Header>
                   <Card.Body>
                     <Card.Title>
                       <span className="fs-3 text-var-red">Rp.20.000</span>
@@ -135,9 +116,9 @@ const Pricing = () => {
                     </Card.Title>
                     <Card.Text>
                       <ul class="list-unstyled mt-3 mb-4">
-                        <li>Music Kualitas Terbaik</li>
-                        <li>Bebas Akses Music Selama 30 Hari</li>
-                        <li>Help center access</li>
+                        <li>Good Quality Music</li>
+                        <li>Free access for all 30 days</li>
+                        <li>Help Center is Available</li>
                         <li>-</li>
                       </ul>
                     </Card.Text>
@@ -147,32 +128,12 @@ const Pricing = () => {
                     </button>
                   </Card.Body>
                 </Card>
-                <Card className="card-price bg-var-dark-gray text-center">
-                  <Card.Header as="h5">Paket Puas</Card.Header>
-                  <Card.Body>
-                    <Card.Title>
-                      <span className="fs-3 text-var-red">Rp.40.000</span>
-                      <span className="">/3Bulan</span>
-                    </Card.Title>
-                    <Card.Text>
-                      <ul class="list-unstyled mt-3 mb-4">
-                        <li>Music Kualitas Terbaik</li>
-                        <li>Bebas Akses Music Selama 3 Bulan</li>
-                        <li>Dapatkan diskon berlangganan</li>
-                        <li>Help center access</li>
-                      </ul>
-                    </Card.Text>
-                    <button className="btn-red px-5" onClick={() => handleBuy("40000")}>
-                      Buy
-                    </button>
-                  </Card.Body>
-                </Card>
               </Col>
             </Row>
           </>
         ) : (
           <>
-            <h1>Anda telah berlangganan</h1>
+            <h1 className="text-white">Have fun 😊</h1>
           </>
         )}
       </Container>

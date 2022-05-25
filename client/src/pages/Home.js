@@ -9,11 +9,13 @@ import { Navbar as NavbarMusic } from "react-bootstrap";
 import PlayerMusic from "../components/audio/AudioPlayer";
 import { Card, Col, Row, Button } from "react-bootstrap";
 import { UserContext } from "../context/userContext";
+import { Link } from "react-router-dom";
+import Login from "../components/modal/Login";
 
 function Home() {
-  //handle for open login screen
-  // const [isClickLogin, setIsClickLogin] = useState(false);
-  // const handleClickLogin = () => setIsClickLogin(!isClickLogin);
+  // handle for open login screen
+  const [isClickLogin, setIsClickLogin] = useState(false);
+  const handleClickLogin = () => setIsClickLogin(!isClickLogin);
 
   const [state] = useContext(UserContext);
   const [musicId, setMusicId] = useState("");
@@ -37,7 +39,7 @@ function Home() {
               {/* Not login */}
               {musics?.map((item) => (
                 <Card className="cardThumb">
-                  <div class="boxthumb">
+                  <div class="boxthumb" onClick={handleClickLogin}>
                     <Card.Img className="imageThumb" variant="top" src={item.thumbnail} />
                   </div>
                   <Card.Body className="cardBody">
@@ -58,10 +60,12 @@ function Home() {
                 <>
                   {/* Login but not subscribed yet */}
                   {musics?.map((item) => (
-                    <Card className="cardThumb">
-                      <div class="boxthumb" onClick={() => setMusicId(item)}>
-                        <Card.Img className="imageThumb" variant="top" src={item.thumbnail} />
-                      </div>
+                    <Card className="cardThumb" key={item.id}>
+                      <Link to="/upgrade">
+                        <div class="boxthumb">
+                          <Card.Img className="imageThumb" variant="top" src={item.thumbnail} />
+                        </div>
+                      </Link>
                       <Card.Body className="cardBody">
                         <Card.Title className="titleCard">
                           <div className="boxTitle">
@@ -79,7 +83,7 @@ function Home() {
                   {/*Login subscribed */}
                   {musics?.map((item) => (
                     <Card className="cardThumb">
-                      <div class="boxthumb">
+                      <div class="boxthumb" onClick={() => setMusicId(item)}>
                         <Card.Img className="imageThumb" variant="top" src={item.thumbnail} />
                       </div>
                       <Card.Body className="cardBody">
@@ -107,6 +111,8 @@ function Home() {
           </NavbarMusic>
         )}
       </div>
+
+      {isClickLogin ? <Login isOpen={isClickLogin} /> : null}
     </>
   );
 }
